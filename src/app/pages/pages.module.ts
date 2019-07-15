@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PAGES_ROUTES } from './pages-routing.module';
 
 import { SharedModule } from '../shared/shared.module';
-
+import { FormsModule } from '@angular/forms';
 
 import { PagesComponent } from './pages.component';
 
@@ -26,7 +26,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
     ],
     imports: [
         SharedModule,
-        PAGES_ROUTES
+        PAGES_ROUTES,
+        FormsModule
     ]
 })
 export class PagesModule { }
