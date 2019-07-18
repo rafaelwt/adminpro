@@ -10,6 +10,7 @@ export class SettingsService {
     temaUrl: 'assets/css/colors/default.css',
     tema: 'default'
   };
+  // tslint:disable-next-line: variable-name
   constructor(@Inject(DOCUMENT) private _document) {
     this.cargarAjustes();
   }
